@@ -10,3 +10,5 @@ function CustomRoutes() {
         </Routes>
     )
 }
+
+export default CustomRoutes;

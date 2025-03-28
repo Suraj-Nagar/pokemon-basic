@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import './PokemonDetails.css';
+import axios from "axios";
 
 function PokemonDetails() {
     const { id } = useParams();
@@ -22,7 +23,7 @@ function PokemonDetails() {
     }, []);
     return (
         <div className="pokemon-details-wrapper">
-             <img src="" alt="" className="pokemon-image" />
+             <img src={pokemon.image} alt="" className="pokemon-image" />
             <div className="pokemon-details-name"><span>name:{pokemon.name}</span> </div>
            
             <div className="pokemon-details-name">
